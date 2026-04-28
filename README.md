@@ -1,86 +1,90 @@
 # Commercial-FirmEsp32
 
-A small collection of republished and custom firmware builds for ESP32-based devices.
+A curated collection of republished and custom firmware builds for ESP32-based devices.
 
-This repository mainly focuses on devices like M5Stick variants and other ESP32 development boards, providing easy access to prebuilt firmware and related resources.
+This repository focuses on compact ESP32 hardware such as M5Stick variants and similar development boards, providing convenient access to prebuilt firmware and related resources.
 
 ---
 
 ## ⚠️ Disclaimer
 
-* This repo **does not claim ownership** of any original firmware.
-* All firmware belongs to their respective authors/maintainers.
-* This is intended for **archival, convenience, and redistribution purposes only**.
-* If you are an original author and want something removed, open an issue.
+* This repository **does not claim ownership** of any original firmware.
+* All firmware is the property of its respective authors and maintainers.
+* Content is provided for **archival and convenience purposes only**.
+* If you are an original author and would like content removed, please open an issue.
 
 ---
 
-## 📦 What’s Included
+## 📦 Contents
 
 * Precompiled firmware binaries (`.bin`)
-* Occasional modified or repackaged builds
-* Notes or configs for specific devices (when needed)
+* Occasionally modified or repackaged builds
+* Device-specific notes and configuration guidance (when available)
 
 ---
 
 ## 🧰 Supported Devices
 
-Primarily ESP32-based hardware, including but not limited to:
+Primarily ESP32-based hardware, including:
 
-* M5StickC / M5StickC Plus
-* Other small ESP32 dev boards
-* Misc ESP32-based gadgets
+* M5StickC / M5StickC Plus / M5Stick S3
+* Other compact ESP32 development boards
+* Miscellaneous ESP32-based devices
 
-(Anything using the ESP32 platform should generally work, depending on the firmware)
+> ⚠️ Compatibility depends on the firmware. Not all builds will work on all boards.
 
 ---
 
 ## ⚡ Flashing Firmware
 
-Most firmware here can be flashed using standard ESP32 tools.
+Most firmware can be flashed using standard ESP32 tools.
 
-### Option 1: esptool (recommended)
-
-M5 Burner Tool: https://docs.m5stack.com/en/uiflow/m5burner/intro#download
+### Option 1: esptool (CLI)
 
 ```bash
-esptool.py --chip esp32 --port COMX --baud 921600 write_flash 0x1000 firmware.bin
+esptool.py --chip esp32 --port COMX --baud 921600 write_flash 0x10000 firmware.bin
 ```
 
-### Option 2: GUI tools
+> Note: Some firmware may require additional files (bootloader, partition table) or different offsets.
 
-* ESP Flash Download Tool
+---
+
+### Option 2: GUI Tools
+
+* M5 Burner Tool: https://docs.m5stack.com/en/uiflow/m5burner/intro#download
+* Espressif Flash Download Tool
 * Other third-party flashers
 
-Make sure to:
+When flashing:
 
 * Select the correct COM port
-* Use proper offsets if specified
-* Erase flash if required
+* Use the correct offsets if provided
+* Erase flash when switching firmware types
+* Verify flash size and mode if configurable
 
 ---
 
 ## 📚 Notes
 
-The ESP32 is a widely used microcontroller platform with built-in Wi-Fi and Bluetooth, commonly used in IoT and embedded projects ([GitHub][1]).
+The ESP32 platform is widely used in IoT and embedded systems, featuring built-in Wi-Fi and Bluetooth.
 
-Different firmware may:
+Depending on the firmware, you may encounter:
 
-* Require specific partition tables
-* Expect certain hardware (screen, buttons, etc.)
-* Not work on all boards
+* Custom partition requirements
+* Hardware-specific dependencies (display, buttons, sensors, etc.)
+* Limited compatibility across different ESP32 variants (ESP32, S2, S3, etc.)
 
-Always read any included notes before flashing.
+Always review any included notes before flashing.
 
 ---
 
 ## ❗ Risks
 
-Flashing firmware always carries some risk:
+Flashing firmware carries inherent risks:
 
-* You can soft-brick your device
-* Incorrect configs may prevent boot
-* Some firmware may not be stable
+* Devices may become temporarily unbootable (soft brick)
+* Incorrect configurations can prevent startup
+* Some firmware may be unstable or experimental
 
 Proceed at your own risk.
 
@@ -88,15 +92,15 @@ Proceed at your own risk.
 
 ## 🤝 Contributing
 
-Feel free to:
+Contributions are welcome:
 
 * Submit firmware builds
-* Add device compatibility notes
+* Add compatibility notes
 * Improve documentation
 
 ---
 
-## 📬 Contact / Issues
+## 📬 Issues & Requests
 
 Use the Issues tab for:
 
@@ -114,8 +118,6 @@ All credit goes to the original firmware developers and the ESP32 community.
 
 ## 📄 License
 
-Unless otherwise specified, this repository is provided as-is with no warranty.
+Unless otherwise specified, this repository is provided **as-is** without warranty.
 
 Refer to individual firmware projects for their respective licenses.
-
-[1]: https://github.com/topics/esp32?utm_source=chatgpt.com "esp32 · GitHub Topics · GitHub"
