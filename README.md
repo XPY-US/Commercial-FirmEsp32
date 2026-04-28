@@ -41,6 +41,46 @@ Most firmware here can be flashed using standard ESP32 tools.
 
 ### Option 1: esptool (recommended)
 
+M5 Burner Tool: <div class="docs-layouts-body"><div class="steps-container" style="display:none;"></div> <div class="search-box"><div id="search"></div> <input type="text" placeholder="Product Name / SKU" value=""> <div class="search-result-container" style="display:none;"><a class="search-result-contents"><div class="search-result-content"><div class="search-result-name">No Results Found</div> <div class="search-result-sku">Hot Searches</div> <div class="search-result-key"><div class="search-result-recommand-box"><div data-key="Camera" class="search-result-recommand-item">
+            Camera
+          </div><div data-key="WiFi" class="search-result-recommand-item">
+            WiFi
+          </div><div data-key="RS485" class="search-result-recommand-item">
+            RS485
+          </div><div data-key="RS232" class="search-result-recommand-item">
+            RS232
+          </div><div data-key="Relay" class="search-result-recommand-item">
+            Relay
+          </div><div data-key="LoRaWAN" class="search-result-recommand-item">
+            LoRaWAN
+          </div><div data-key="GPS" class="search-result-recommand-item">
+            GPS
+          </div><div data-key="NB-IoT" class="search-result-recommand-item">
+            NB-IoT
+          </div><div data-key="LTE" class="search-result-recommand-item">
+            LTE
+          </div><div data-key="GSM" class="search-result-recommand-item">
+            GSM
+          </div><div data-key="Zigbee" class="search-result-recommand-item">
+            Zigbee
+          </div><div data-key="Servo" class="search-result-recommand-item">
+            Servo
+          </div><div data-key="StepMotor" class="search-result-recommand-item">
+            StepMotor
+          </div><div data-key="Ethernet" class="search-result-recommand-item">
+            Ethernet
+          </div><div data-key="E-Paper" class="search-result-recommand-item">
+            E-Paper
+          </div></div></div></div></a> <div class="tab-panel" style="display:none;"><div class="tabs"><button class="active">
+      Product
+    </button><button class="">
+      Contents
+    </button></div> <div class="tab-content"><div style=""></div><div style="display:none;"></div></div></div></div> <button class="search-btn"><p>Search</p></button> <div class="search-cover" style="display:none;"></div></div> <div class="viewer"><div class="guide markdown"><h1 id="m5burner" data-id="M5Burner">M5Burner</h1> <h2 id="download" data-id="Download">Download</h2> <p>M5Burner is a firmware burning software that integrates firmware burning, exporting, publishing, sharing and other functions. The software provides the burning of official UIFlow firmware and product-related demos, which is convenient for development and testing.</p><div class="table-container"><table><thead><tr><th>Software version</th> <th>Download link</th></tr></thead><tbody><tr><td>M5Burner_Windows</td> <td><a target="_blank" href="https://m5burner-cdn.m5stack.com/app/M5Burner-v3-beta-win-x64.zip">Download</a></td></tr> <tr><td>M5Burner_MacOS</td> <td><a target="_blank" href="https://m5burner-cdn.m5stack.com/app/M5Burner-v3-mac-x64.dmg">Download</a></td></tr> <tr><td>M5Burner_Linux</td> <td><a target="_blank" href="https://m5burner-cdn.m5stack.com/app/M5Burner-v3-beta-linux-x64.zip">Download</a></td></tr></tbody></table></div><img src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/uiflow/m5burner/m5burner_intro_01.png" width="70%"> <h2 id="tutorial" data-id="Tutorial">Tutorial</h2> <ul><li><a target="_blank" href="/en/uiflow/uiflow_web">UiFlow 1.0 Firmware Flashing</a></li> <li><a target="_blank" href="/en/uiflow2/uiflow_web">UiFlow 2.0 Firmware Flashing</a></li> <li><a target="_blank" href="/en/uiflow/m5burner/export">Firmware Export</a></li> <li><a target="_blank" href="/en/uiflow/m5burner/publish">Firmware Publish</a></li></ul> <h2 id="video" data-id="Video">Video</h2> <div class="tab-panel"><div class="tabs"><button class="active">
+      Bilibili
+    </button><button class="">
+      Youtube
+    </button></div> <div class="tab-content"><div style=""><div class="video-iframe"><iframe src="//player.bilibili.com/player.html?isOutside=true&amp;aid=115642128728368&amp;bvid=BV1rfSkB2Esi&amp;p=1&amp;autoplay=0" loading="lazy" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="allowfullscreen"></iframe></div></div><div style="display:none;"><div class="video-iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/p1wxo0LqZjk?si=Pj2KLvwF0CYfZfdp" title="YouTube video player" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div></div></div></div></div></div> <div class="pagination-buttons" data-v-1d147d7c=""><a data-v-1d147d7c="" href="/en/uiflow2/uiflow2_video/chain" class="button prev-button"><span data-v-1d147d7c="" class="arrow left"></span> <span data-v-1d147d7c="" class="text"><span data-v-1d147d7c="" class="label">Previous</span> <span data-v-1d147d7c="" class="title">UiFlow2 Video Column - Chain Series</span></span></a> <a href="/en/uiflow/m5burner/export" class="button next-button" data-v-1d147d7c=""><span class="text" data-v-1d147d7c=""><span class="label" data-v-1d147d7c="">Next</span> <span class="title" data-v-1d147d7c="">M5Burner - Firmware Export</span></span> <span class="arrow right" data-v-1d147d7c=""></span></a></div></div>
+
 ```bash
 esptool.py --chip esp32 --port COMX --baud 921600 write_flash 0x1000 firmware.bin
 ```
