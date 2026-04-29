@@ -1,4 +1,5 @@
-<div class="max-w-md text-center">
+<div id="welcomePanel" class="flex flex-1 items-center justify-center p-8">
+                        <div class="max-w-md text-center">
                             <div class="bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 flex h-16 items-center justify-center mb-5 mx-auto rounded-2xl text-blue-600 w-16">
                                 <svg class="h-8 w-8" xmlns:xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"></path></svg>
                             </div>
@@ -24,3 +25,4 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
