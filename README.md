@@ -1,6 +1,6 @@
 # Commercial-FirmEsp32
 <p align="center">
-  <img src="https://raw.githubusercontent.com/XPY-US/Commercial-FirmEsp32/main/assets/logo.png" width="300"/>
+  <img src="[https://raw.githubusercontent.com/XPY-US/Commercial-FirmEsp32/main/assets/logo.png](https://github.com/XPY-US/Commercial-FirmEsp32/blob/main/assets/logo.png)" width="300"/>
 </p>
 A curated collection of republished and custom firmware builds for ESP32-based devices.
 
