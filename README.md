@@ -1,4 +1,5 @@
 # Commercial-FirmEsp32
+![Commercial-FirmEsp32 Logo](https://raw.githubusercontent.com/XPY-US/Commercial-FirmEsp32/main/assets/logo.png)
 
 A curated collection of republished and custom firmware builds for ESP32-based devices.
 
